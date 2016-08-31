@@ -1,0 +1,24 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>basic example</title>
+</head>
+<body>
+<script type='text/javascript' src='http://cdn.staticfile.org/jquery/2.1.1/jquery.min.js'></script>
+<script type="text/javascript" src="http://cdn.staticfile.org/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
+
+<p>二维码信息：201211070014</p>
+<div id="qrcodeTable"></div>
+<p>二维码信息：gerrard</p>
+<div id="qrcodeCanvas"></div>
+<script>
+    $('#qrcodeTable').qrcode({
+        render  : "table",
+        text    : "201211070014"    //根据此串生成第一个二维码
+    });
+    $('#qrcodeCanvas').qrcode({
+        text    : "gerrard"     //根据此串生成第二个二维码
+    });
+</script>
+</body>
+</html>
